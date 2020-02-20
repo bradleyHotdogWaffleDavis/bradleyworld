@@ -8,8 +8,9 @@
     }
     .image-hero {
         display: block;
-        margin: 0 auto;
         max-width: 852px;
+        max-width: 120%;
+        margin: 0 auto;
         &.image-hero-large {
             max-width: 1230px;
         }
