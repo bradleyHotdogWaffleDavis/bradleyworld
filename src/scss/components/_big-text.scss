@@ -1,0 +1,99 @@
+.big-text-position {
+    grid-column: 2 / 12;
+    margin-bottom: 120px;
+
+    @media only screen and (min-width:834px) {
+        grid-column: 2 / 24;
+        margin-bottom: 240px;
+    }
+
+    .big-text {
+        overflow-wrap: break-word;
+        @include h2 (400, left);
+        @media only screen and (max-width:834px) {
+            font-size: 10vw;
+        }
+        &.center {
+            text-align: center;
+        }
+
+        &.home-story {
+            @media only screen and (min-width:834px) {
+                grid-column: 2 / -1;
+            }
+            margin-top: 180px;
+            &:first-child {
+                margin-top: 30vh;
+            }
+        }
+        .about-page & {
+            margin-top: 30vh;
+            color: $primary-2;
+        }
+        &.position-two {
+            @media only screen and (min-width:834px) {
+                text-align: left;
+                grid-column: 5 / 25;
+            }
+        }
+        &.position-three {
+            @media only screen and (min-width:834px) {
+                text-align: left;
+                grid-column: 1 / 20;
+            }
+        }
+        a {
+            text-decoration: underline;
+            text-decoration-color: $primary-2;
+            &:hover {
+                color: $primary-3;
+                text-decoration-color: $primary-3;
+            }
+        }
+
+        .show-parts > span.hide {
+            display: none;
+            opacity: 0;
+        }
+        .show-parts > span.show {
+            display: inline;
+            opacity: 1;
+        }
+        .show-parts {
+            .trigger {
+                transition: all .1s linear;
+                cursor: pointer;
+                color: $primary-3;
+                text-decoration: underline;
+                text-decoration-color: $primary-3;
+                &:hover {
+                    color: $primary-2;
+                    text-decoration-color: $primary-2;
+                }
+                &.no-trigger {
+                    cursor: default;
+                    text-decoration: none;
+                    color: $primary-2;
+                    text-decoration-color: $primary-2;
+                }
+            }
+        }
+    }
+
+
+    .author-img {
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 30px auto 30px auto;
+        @media only screen and (min-width:834px) {
+            margin: 60px auto 60px auto;}
+    }
+
+    .author {
+        @include paragraph-large(400, center);
+        span {
+            font-weight: 600;
+        }
+    }
+}

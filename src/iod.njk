@@ -1,0 +1,58 @@
+{% extends "./layout/layout.njk" %}
+{% block content %}
+
+<div class="iod-page outer-grid-set">
+
+    <div class="page-title" data-scroll-speed="-2">
+        <h1 class="iod-page-title">IOD</h1>
+    </div>
+
+    <div class="image-hero-wrap">
+        <picture class="image-hero image-hero-small">
+            <source media="(min-width: 1200px)" srcset="./images/projects/iod/0-1-hero@1x.png 1x, ./images/projects/iod/0-1-hero@2x.png 2x">
+                <img src="./images/projects/iod/0-1-hero@1x.png">
+        </picture>
+    </div>
+
+    <div class="breakdown-wrap">
+        <div class="breakdown-grid-set">
+            <p class="breakdown-component paragraph-large"><span class="span-large">CLIENT</span>Institute of Directors NZ</p>
+            <p class="breakdown-component paragraph-large"><span class="span-large">PLATFORM</span>Large scale website</p>
+            <p class="breakdown-component paragraph-large"><span class="span-large">MY ROLE</span>Lead UX/UI Designer</p>
+            <p class="breakdown-component paragraph-large"><span class="span-large">MVP DEVLIVERY</span>Aug 2018 — Dec 2019</p>
+        </div>
+    </div>
+
+    <div class="big-text-position">
+        <p class="big-text center">Providing the experiences &amp; resources essential for the thought leaders of New Zealand.</p>
+    </div>
+
+    {% include "./components/iod-visual-brand_case-study_info-right.njk" %}
+    {% include "./components/iod-ia_case-study_info-left.njk" %}
+
+    <div class="big-text-position">
+        <h2 class="big-text center">“This course was brilliant at focusing on the role of the board in developing strategy from a very purpose-driven perspective.”</h2>
+        <img class="author-img"  src="./images/testimonials/Kawhi@2x.png" alt="Portrait of Kawhi Leonard">
+        <p class="paragraph-large author"><span>Kawhi Leonard — </span>Head of Marketing</p>
+    </div>
+
+    {% include "./components/iod-my-account_case-study_info-right.njk" %}
+
+    <div class="big-text-position">
+        <p class="big-text center">Brand-new and robust eCommerce experiences, to withstand some pretty tricky business rules.</p>
+    </div>
+
+    {% include "./components/iod-ecommerce_case-study_info-left.njk" %}
+
+    <div class="big-text-position">
+        <p class="big-text position-three">
+            We continue to plan and deliver a prioritised, outcome focused roadmap of continuous improvements, within 2 week sprint cycles.
+        </p>
+    </div>
+
+</div>
+
+
+{% include "./components/next-project-mercury-go.njk" %}
+
+{% endblock %}

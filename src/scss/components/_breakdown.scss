@@ -1,0 +1,26 @@
+.breakdown-wrap {
+    z-index: -1;
+    grid-column: 1 / -1;
+    @media only screen and (min-width:834px) {
+        grid-column: 2 / 24;
+    }
+    .breakdown-grid-set {
+        max-width: 1482px;
+        margin: 30px auto 120px auto;
+        @include grid-set-yourself (1, 1, 4, 4);
+        grid-gap: 30px;
+        @media only screen and (min-width:550px) {
+            grid-row-gap: 60px;
+            margin: 10vh auto 240px auto;
+        }
+        .breakdown-component {
+            width: 100%;
+            @include paragraph-large (400, center);
+            .span-large {
+                display: block;
+                margin-bottom: 5px;
+                @include span-large (700, center);
+            }
+        }
+    }
+}

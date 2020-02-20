@@ -1,0 +1,23 @@
+{
+  "name": "bradleydavis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve src/index.njk",
+    "build": "parcel build src/index.njk"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nunjucks": "^3.2.0",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "parcel-plugin-nunjucks": "^2.2.0",
+    "sass": "^1.24.3"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "parcel-bundler": "^1.12.4",
+    "scrollmagic": "^2.0.7"
+  }
+}

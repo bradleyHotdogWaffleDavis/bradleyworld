@@ -1,0 +1,19 @@
+.logo {
+    z-index: 1;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    width: 110px;
+    height: 110px;
+	-webkit-animation: rotation 4s infinite linear;
+    animation: rotation 4s infinite linear;
+    
+    @media only screen and (min-width:1280px) {
+        z-index: 2;
+        top: 30px;
+        bottom: auto;
+        left: 4vw;
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,16 @@
+.outer-grid-set {
+    grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    grid-gap: 0 21px;
+    grid-template-rows: auto;
+        @media only screen and (min-width:834px) {
+        grid-template-columns: repeat(24, 1fr);
+    }
+}
+
+// .nav-push {
+//     margin-top: 390px;
+//         @media only screen and (min-width:834px) {
+
+//     }
+// }

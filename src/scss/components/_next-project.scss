@@ -1,0 +1,53 @@
+.next-project-text {
+    display: block;
+    @include paragraph-large(400, center);
+    margin-bottom: 20px;
+    span {
+        font-weight: 600;
+    }
+}
+
+.connector-line {
+    width: 50%;
+    height: 20vw;
+    margin-bottom: 120px;
+    border-right: 2px solid $primary-2;
+    @media only screen and (min-width:834px) {
+        height: 10vw;
+        margin-bottom: 240px;
+    }
+}
+
+.next-project {
+    overflow: hidden;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 60px 0 60px;
+    // grid-area: auto / 3 / span 1 / span 8;
+    @media only screen and (min-width:834px) {
+        // grid-area: auto / 6 / span 1 / span 14;
+        max-width: 50vw;
+        &.large {
+            max-width: 80vw;
+        }
+    }
+    @media only screen and (min-width:1200px) {
+        &.large {
+            max-width: 60vw;
+        }
+    }
+    picture {
+        display: block;
+        margin-bottom: -13vw;
+        transition: all .2s ease-in-out;
+        img {
+            width: 100%;
+        }
+    }
+    &:hover picture {
+        transform: translateY(-70px);
+    }
+    a {
+        display: block;
+    }
+}

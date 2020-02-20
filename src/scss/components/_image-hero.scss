@@ -1,0 +1,25 @@
+.image-hero-wrap {
+    grid-column: 1 / -1;
+    padding: 90px 8vw;
+    background-image: linear-gradient(180deg, rgba($primary, 0) 0%, $primary 34%);
+    @media only screen and (min-width:834px) {
+        grid-column: 1 / -1;
+        padding: 90px 0;
+    }
+    .image-hero {
+        display: block;
+        margin: 0 auto;
+        max-width: 852px;
+        &.image-hero-large {
+            max-width: 1230px;
+        }
+        &.image-hero-small {
+            max-width: 852px;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+

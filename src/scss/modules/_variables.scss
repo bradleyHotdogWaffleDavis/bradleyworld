@@ -1,0 +1,29 @@
+// Colors
+$primary-2: #fdfcf7;
+$primary-3: #FF003D;
+// $primary-3: rgb(238, 255, 0);
+$primary: #000;
+
+// $primary-2: #0e1927;
+// $primary: #FF003D;
+
+$primary-mercury-go: #fff100;
+$primary-iod: #1D252D;
+
+$secondary-50:  #E9FAF0;
+$secondary-100: #C7F3DA;
+$secondary-200: #A2ECC1;
+$secondary-300: #7CE4A8;
+$secondary-400: #60DE95;
+$secondary-500: #44D882;
+$secondary-600: #3ED47A;
+$secondary-700: #35CE6F;
+$secondary-800: #2DC865;
+$secondary-900: #1FBF52;
+
+// Typography
+$font-mukta: 'Mukta', sans-serif;
+
+// Gradients
+$Upward-gradient: linear-gradient(0deg, $primary 10%, rgba($primary, 0) 100%);
+$Downward-gradient: linear-gradient(180deg, $primary 10%, rgba($primary, 0) 100%);
