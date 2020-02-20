@@ -24,10 +24,9 @@
     margin-bottom: 180px;
     }
 
-
     li {
         display: block;
-        max-width: calc(100vw, -60px);
+        max-width: calc(100vw - 60px);
         padding-top: 30px;
         padding-bottom: 30px;
         @include paragraph-xl(300, left);
