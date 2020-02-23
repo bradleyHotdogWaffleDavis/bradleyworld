@@ -15,6 +15,6 @@ var e,t=arguments[3],n=require("process");!function(e,t){"use strict";"object"==
 },{}],"fLcI":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.addClass=void 0;var s=function(){$(".light-dark-mode").click(function(s){$(this).addClass("light").siblings().removeClass("dark")})};exports.addClass=s;
 },{}],"QvaY":[function(require,module,exports) {
-"use strict";var r=require("./scroll"),e=require("./reveal-boy"),s=require("./show-parts"),a=require("./add-class");(0,r.scrollMagic)(),(0,e.revealBoy)(),(0,a.addClass)(),(0,s.showParts)();
+"use strict";var r=require("./scroll"),e=require("./reveal-boy"),s=require("./show-parts"),a=require("./add-class");(0,r.scrollMagic)(),(0,e.revealBoy)(),(0,s.showParts)(),(0,a.addClass)();
 },{"./scroll":"N8YO","./reveal-boy":"ZFKC","./show-parts":"zLiC","./add-class":"fLcI"}]},{},["QvaY"], null)
-//# sourceMappingURL=/js.fbe81110.js.map
+//# sourceMappingURL=/js.947f0fcd.js.map
