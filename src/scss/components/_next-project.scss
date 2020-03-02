@@ -1,51 +1,72 @@
 .next-project-text {
     display: block;
-    @include paragraph-large(400, center);
-    margin-bottom: 20px;
+    @include paragraph-large($font-sans-200, center, 200);
+    margin-bottom: 30px;
     span {
-        font-weight: 600;
+        @include paragraph-large($font-sans-400, center, 400);
     }
 }
 
 .connector-line {
     width: 50%;
     height: 20vw;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
     border-right: 2px solid $primary-2;
     @media only screen and (min-width:834px) {
         height: 10vw;
-        margin-bottom: 240px;
+        margin-bottom: 90px;
+    }
+}
+
+.next-project-margin {
+    @media only screen and (min-width:834px) {
+        margin-bottom: 80vh;
     }
 }
 
 .next-project {
     overflow: hidden;
-    max-width: 300px;
     margin: 0 auto;
     padding: 20px 60px 0 60px;
-    // grid-area: auto / 3 / span 1 / span 8;
+    @media only screen and (max-width:834px) {
+        max-width: 300px;
+    }
     @media only screen and (min-width:834px) {
-        // grid-area: auto / 6 / span 1 / span 14;
-        max-width: 50vw;
-        &.large {
-            max-width: 80vw;
-        }
+        z-index: -2;
+        position: fixed;
+        // bottom: -800px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // max-width: 1600px;
+        height: 60vmin;
+        padding-top: 20vh;
     }
-    @media only screen and (min-width:1200px) {
-        &.large {
-            max-width: 60vw;
-        }
-    }
+    // @media only screen and (min-width:1200px) {
+    //     bottom: -500px;
+    // }
     picture {
-        display: block;
-        margin-bottom: -13vw;
-        transition: all .2s ease-in-out;
-        img {
-            width: 100%;
+            margin-bottom: -100px;
+        @media only screen and (min-width:834px) {
+            max-height: 100vh;
+            max-width: 1280px;
+            margin: 0 auto;
         }
-    }
-    &:hover picture {
-        transform: translateY(-70px);
+        display: block;
+        img {
+            transition: all .2s ease-in-out;
+            width: 100%;
+            @media only screen and (min-width:834px) {
+                height: 100%;
+            }
+        }
+        @media screen and (min-width:834px) {
+            &:hover {
+                img {
+                    transform: translateY(-25px);
+                }
+            }
+        }
     }
     a {
         display: block;

@@ -1,10 +1,13 @@
 .outer-grid-set {
     grid-template-columns: repeat(12, 1fr);
     display: grid;
-    grid-gap: 0 21px;
+    grid-gap: 0 10px;
     grid-template-rows: auto;
         @media only screen and (min-width:834px) {
+        background: $primary;
+        box-shadow: 0px 0px 90px 90px;
         grid-template-columns: repeat(24, 1fr);
+        grid-gap: 0 21px;
     }
 }
 

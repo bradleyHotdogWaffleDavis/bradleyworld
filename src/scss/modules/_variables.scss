@@ -7,8 +7,8 @@ $primary: #000;
 // $primary-2: #0e1927;
 // $primary: #FF003D;
 
-$primary-mercury-go: #fff100;
-$primary-iod: #1D252D;
+$color-mercury-go: #fff100;
+$color-iod: #00C5B4;
 
 $secondary-50:  #E9FAF0;
 $secondary-100: #C7F3DA;
@@ -23,6 +23,8 @@ $secondary-900: #1FBF52;
 
 // Typography
 $font-mukta: 'Mukta', sans-serif;
+$font-sans-200: 'font-sans-200', sans-serif;
+$font-sans-400: 'font-sans-400', sans-serif;
 
 // Gradients
 $Upward-gradient: linear-gradient(0deg, $primary 10%, rgba($primary, 0) 100%);

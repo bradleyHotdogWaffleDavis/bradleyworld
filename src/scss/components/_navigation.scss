@@ -44,34 +44,80 @@
             grid-template-rows: repeat(2, 60px);
         }
         li {
+            .light-dark-mode {
+                width: 18px;
+                height: 18px;
+                float: right;
+                box-shadow: inset 0px 0px 0px 1px $primary-2;
+                border-radius: 100%;
+                margin-top: 33px;
+                overflow: hidden;
+                position: relative;
+                box-sizing: initial;
+                &:hover {
+                    box-shadow: inset 0px 0px 0px 1px $primary-2;
+                    // box-shadow: inset 0px 0px 0px 2px $primary-2;
+                }
+                a {
+                    box-shadow: none;
+                }
+                &::after {
+                    content: '';
+                    width: 27px;
+                    height: 27px;
+                    background: $primary-2;
+                    position: absolute;
+                    top: 0;
+                    left: 10px;
+                    z-index: -1;
+                }
+            }
             @media only screen and (min-width:834px) {
-                box-shadow: inset -1px 0 0 0 $primary-2;
-                transition: all .2s ease-in-out;
                 &.active {
                     box-shadow: inset -3px 0 0 0 $primary-3;
                     color: $primary-3;
                 }
-                &:hover {
-                    box-shadow: inset -3px 0 0 0 $primary-3;
-                    color: $primary-3
-                }
-                &:nth-child(1) {
-                    grid-area: 1 / 2 / span 1 / span 6;
+
+                &:nth-child(odd) {
                     a {
-                        transition: color .2s ease-in-out;
+
+                        box-shadow: inset -1px 0 0 0 $primary-2;
+                        transition: all .2s ease-in-out;
                         &:hover {
-                            color: $primary-3
+                            box-shadow: inset -3px 0 0 0 $color-iod;
+                            color: $color-iod;
+                        }
+                    }
+                }
+                &:nth-child(even) {
+                    a {
+                        box-shadow: inset -1px 0 0 0 $primary-2;
+                        transition: all .2s ease-in-out;
+                        &:hover {
+                            box-shadow: inset -3px 0 0 0 $color-mercury-go;
+                            color: $color-mercury-go;
                         }
                     }
                 }
             }
             &:nth-child(1) {
-                grid-area: 2 / 2 / span 1 / span 6;
-                box-shadow: none;
                 a {
-                    text-align: left;
-                    padding-left: 20px;
+                    box-shadow: none;
+                    transition: color .2s ease-in-out;
+                    @include paragraph-large($font-sans-400, left, 400);
+                    &:hover {
+                        box-shadow: none;
+                        color: $primary-3;
+                    }
                 }
+            }
+
+            // CSS GRID STUFF
+            // CSS GRID STUFF
+            // CSS GRID STUFF
+
+            &:nth-child(1) {
+                grid-area: 2 / 2 / span 1 / span 6;
             }
             &:nth-child(2) {
                 grid-area: 2 / 6 / span 1 / span 6;
@@ -80,20 +126,20 @@
                 grid-area: 3 / 1 / span 1 / span 11;
             }
             &:nth-child(4) {
-                grid-area: 4 / 1 / span 1 / span 11;
-            }
-            &:nth-child(5) {
-                grid-area: 5 / 1 / span 1 / span 11;
+                grid-area: 1 / 1 / span 1 / span 11;
             }
             @media only screen and (min-width:834px) {
+                &:nth-child(1) {
+                    grid-area: 1 / 2 / span 1 / span 5;
+                }
                 &:nth-child(2) {
-                    grid-area: 2 / 1 / span 1 / span 8;
+                    grid-area: 2 / 6 / span 1 / span 5;
                 }
                 &:nth-child(3) {
-                    grid-area: 1 / 6 / span 1 / span 8;
+                    grid-area: 1 / 6 / span 1 / span 5;
                 }
                 &:nth-child(4) {
-                    grid-area: 3 / 8 / span 1 / span 8;
+                    grid-area: 1 / 11 / span 1 / span 2;
                 }
             }
             @media only screen and (min-width:1280px) {
@@ -107,27 +153,19 @@
                     grid-area: 2 / 7 / span 1 / span 3;
                 }
                 &:nth-child(4) {
-                    grid-area: 1 / 10 / span 1 / span 7;
-                }
-                &:nth-child(5) {
-                    grid-area: 3 / 10 / span 1 / span 5;
-                }
-                &:nth-child(5) {
-                    grid-area: 1 / 14 / span 1 / span 4;
+                    grid-area: 1 / 15 / span 1 / span 2;
                 }
             }
             a {
-                @include paragraph-large(400, right);
+                @include paragraph-large($font-sans-200, right, 200);
                 line-height: 1.6666666667;
                 padding-top: 20px;
-                padding-right: 20px;
                 display: block;
                 &.active {
                     color: $primary-2;
-                    font-weight: 700;
                 }
                 @media only screen and (min-width:834px) {
-                    line-height: 1.5;
+                    padding-right: 20px;
                     padding-top: 30px;
                 }
                 @media only screen and (min-width:1481px) {
@@ -181,15 +219,18 @@
             }
         }
         a {
-            @include paragraph-large(400, right);
+            @include paragraph-large($font-sans-200, right, 200);
             padding-top: 20px;
             padding-right: 20px;
             display: block;
+            mix-blend-mode: exclusion;
             @media only screen and (min-width:834px) {
                 padding-top: 30px;
                 padding-right: 0;
-                color: white;
-                mix-blend-mode: exclusion;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: $primary-3;
+                }
             }
         }
     }

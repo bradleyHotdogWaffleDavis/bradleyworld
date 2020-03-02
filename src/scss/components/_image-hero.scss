@@ -1,16 +1,23 @@
 .image-hero-wrap {
     grid-column: 1 / -1;
     padding: 90px 8vw;
+    overflow: hidden;
     background-image: linear-gradient(180deg, rgba($primary, 0) 0%, $primary 34%);
+    z-index: 1;
     @media only screen and (min-width:834px) {
         grid-column: 1 / -1;
         padding: 90px 0;
     }
     .image-hero {
         display: block;
-        max-width: 852px;
-        max-width: 120%;
         margin: 0 auto;
+        max-width: 852px;
+        width: 160%;
+        // margin-left: -20%;
+        @media only screen and (min-width:600px) {
+            width: auto;
+            margin: 0 auto;
+        }
         &.image-hero-large {
             max-width: 1230px;
         }

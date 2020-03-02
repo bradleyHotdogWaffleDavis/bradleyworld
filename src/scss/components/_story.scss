@@ -16,7 +16,7 @@
             margin-bottom: 150px;
         }
         &.story  {
-            font-size: 12vw;
+            font-size: 14vw;
             @media only screen and (min-width:834px) {
                 font-size: 8vw;
             }
@@ -24,42 +24,10 @@
     }
     p {
         margin-bottom: 180px;
-        @include paragraph-xxl(400, left);
+        @include paragraph-xxl($font-sans-200, left, 200);
         max-width: 60vw;
         @media only screen and (min-width:834px) {
             margin-bottom: 120px;
-        }
-    }
-    ul {
-        margin-bottom: 90px;
-        @media only screen and (min-width:834px) {
-            margin-bottom: 150px;
-        }
-    }
-
-    li {
-        display: block;
-        max-width: calc(100vw - 60px);
-        padding-top: 15px;
-        padding-bottom: 15px;
-        @include paragraph-xl(300, left);
-        border-bottom: 1px solid rgba($primary-2, 0.2);
-        @media only screen and (min-width:834px) {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            max-width: 60vw;
-        }
-        @media only screen and (min-width:1280px) {
-            max-width: 45vw;
-        }
-        &.list-title {
-            margin-bottom: none;
-            border-bottom: none;
-            @include span-large(700, left);
-        }
-        &:last-child {
-            border-bottom: none;
-
         }
     }
 }

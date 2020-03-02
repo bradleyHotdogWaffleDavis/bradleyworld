@@ -1,23 +1,29 @@
 .big-text-position {
     grid-column: 2 / 12;
     margin-bottom: 120px;
+    z-index: 1;
 
     @media only screen and (min-width:834px) {
         grid-column: 2 / 24;
         margin-bottom: 240px;
+
+        &.last-page-component {
+            margin-bottom: 60px;
+        }
     }
 
     .big-text {
         overflow-wrap: break-word;
-        @include h2 (400, left);
+        @include h2 (left);
         @media only screen and (max-width:834px) {
-            font-size: 10vw;
+            font-size: 8vw;
         }
         &.center {
             text-align: center;
         }
 
         &.home-story {
+            font-size: 10vw;
             @media only screen and (min-width:834px) {
                 grid-column: 2 / -1;
             }
@@ -66,6 +72,17 @@
                 color: $primary-3;
                 text-decoration: underline;
                 text-decoration-color: $primary-3;
+
+                .iod-page & {
+                    color: $color-iod;
+                    text-decoration-color: $color-iod;
+                }
+
+                .mercury-go-page & {
+                    color: $color-mercury-go;
+                    text-decoration-color: $color-mercury-go;
+                }
+
                 &:hover {
                     color: $primary-2;
                     text-decoration-color: $primary-2;
@@ -91,7 +108,7 @@
     }
 
     .author {
-        @include paragraph-large(400, center);
+        @include paragraph-large($font-sans-400, center, 400);
         span {
             font-weight: 600;
         }
