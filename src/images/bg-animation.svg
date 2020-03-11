@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 13786 9558" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5">
+    <rect id="Saucing up that dog" serif:id="BG animation" x="0" y="0" width="13785.4" height="9557.3" style="fill:none"/>
+    <clipPath id="_clip1">
+        <rect x="0" y="0" width="13785.4" height="9557.3"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <path id="squiggle" class="animated-squiggle" d="M236.411,1459.51c518.73,1179.34 -351.484,3058.16 1556.19,3538.02c1907.67,479.86 5196.27,-1080.38 4978.8,-2482.72c-217.466,-1402.34 -6435.13,-2155.14 -4108.45,4356.35c2326.68,6511.49 2811.98,-3070.07 6455.5,-1814.16c3643.52,1255.9 889.178,3791.3 -468.464,3228.76c-1357.64,-562.538 -109.972,-3511.81 1723.86,-5156.44c1833.83,-1644.62 1092.2,-3926.69 -1440.89,-2261.47c-2533.09,1665.22 3836.69,3532.92 4726.06,3584.58" style="fill:none;stroke:#fff;stroke-width:958.33px"/>
+    </g>
+
+    <style>
+
+        .animated-squiggle {
+            stroke-dasharray: 100% 35%;
+            animation: animated-squiggle 3s linear infinite;
+        }
+
+        @keyframes animated-squiggle {
+            0% {
+                stroke-dashoffset: -135%;
+            }
+            100% {
+                stroke-dashoffset: 0%;
+            }
+        }
+
+    </style>
+
+</svg>

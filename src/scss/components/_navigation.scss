@@ -21,11 +21,12 @@
 .navPrimaryWrap {
     background-image: none;
     grid-column: 1 / 13;
-    grid-row: 1 / -1;
+    grid-row: 2;
     padding-top: 0;
     padding-bottom: 30px;
     @media only screen and (min-width:834px) {
         grid-column: 1 / 16;
+        grid-row: 1;
         padding-top: 30px;
         padding-bottom: 90px;
     }
@@ -178,12 +179,9 @@
 
 .navContactWrap {
     // background-image: $Upward-gradient;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    grid-column: 2 / 13;
+    grid-row: 1;
     padding-top: 20px;
-    padding-bottom: 30px;
     @media only screen and (min-width:834px) {
         background-image: none;
         position: static;
@@ -194,7 +192,8 @@
         grid-column: 19 / 25;
     }
     ul {
-        display: grid;
+        @include grid-twenty-four;
+        grid-template-rows: repeat(1, 50px);
         @media only screen and (min-width:834px) {
             grid-template-columns: repeat(9, 1fr);
             grid-template-rows: 60px;
@@ -205,7 +204,7 @@
         }
         li {
             &:nth-child(1) {
-                grid-area: 1 / 1 / span 1 / span 6;
+                grid-area: 1 / 1 / span 1 / span 11;
             }
             @media only screen and (min-width:834px) {
                 &:nth-child(1) {
@@ -221,7 +220,6 @@
         a {
             @include paragraph-large($font-sans-200, right, 200);
             padding-top: 20px;
-            padding-right: 20px;
             display: block;
             mix-blend-mode: exclusion;
             @media only screen and (min-width:834px) {

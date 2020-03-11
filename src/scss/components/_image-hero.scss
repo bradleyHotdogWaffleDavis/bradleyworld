@@ -6,24 +6,27 @@
     z-index: 1;
     @media only screen and (min-width:834px) {
         grid-column: 1 / -1;
-        padding: 90px 0;
+        padding: 150px 0;
     }
     .image-hero {
         display: block;
         margin: 0 auto;
         max-width: 852px;
         width: 160%;
-        // margin-left: -20%;
+
         @media only screen and (min-width:600px) {
             width: auto;
             margin: 0 auto;
         }
+
         &.image-hero-large {
             max-width: 1230px;
         }
+
         &.image-hero-small {
             max-width: 852px;
         }
+
         img {
             width: 100%;
             display: block;

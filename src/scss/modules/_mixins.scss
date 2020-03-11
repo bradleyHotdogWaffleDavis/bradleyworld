@@ -42,7 +42,7 @@
   font-family: $font;
   // speak: none;
   font-size: 1rem;
-  letter-spacing: 0.034375rem;
+  letter-spacing: 0.034rem;
   line-height: 1.5;
   text-align: $align;
   font-weight: $weight;
@@ -61,8 +61,8 @@
 @mixin paragraph-xl ($font, $align, $weight) {
   font-family: $font, sans-serif;
   // speak: none;
-  font-size: 1.125rem;
-  letter-spacing: 0.034375;
+  font-size: 1rem;
+  letter-spacing: 0.034rem;
   line-height: 1.5;
   text-align: $align;
   font-weight: $weight;
@@ -71,19 +71,19 @@
   -moz-osx-font-smoothing: grayscale;
   @media only screen and (min-width:550px) {
     font-size: 1.375rem;
-    letter-spacing: 0.041875;
+    letter-spacing: 0.042rem;
   }
   @media only screen and (min-width:834px) {
     font-size: 1.6875rem;
-    letter-spacing: 0.05125;
+    letter-spacing: 0.051rem;
   }
 }
 
 @mixin paragraph-xxl ($font, $align, $weight) {
   font-family: $font, sans-serif;
   // speak: none;
-  font-size: 1.5625rem;
-  letter-spacing: 0.05625rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
   line-height: 1.5;
   text-align: $align;
   font-weight: $weight;
@@ -97,19 +97,19 @@
 
   @media only screen and (min-width:834px) {
     font-size: 2.1875rem;
-    letter-spacing: 0.05625rem;
+    letter-spacing: 0.056rem;
   }
 
   @media only screen and (min-width:1280px) {
     font-size: 2.5rem;
-    letter-spacing: 0.05625rem;
+    letter-spacing: 0.056rem;
   }
 }
 
 @mixin span-large ($font, $align, $weight) {
   font-family: $font, sans-serif;
-  font-size: 0.8125rem;
-  letter-spacing: 0.11625rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.116rem;
   line-height: 1.25;
   text-align: $align;
   font-weight: $weight;
@@ -124,7 +124,7 @@
 
   @media only screen and (min-width:834px) {
     font-size: 0.9375rem;
-    letter-spacing: 0.13375rem;
+    letter-spacing: 0.134;
   }
 }
 

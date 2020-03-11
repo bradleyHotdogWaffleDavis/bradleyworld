@@ -29,7 +29,7 @@
         }
 
         span {
-            position: sticky;
+            // position: sticky;
             display: block;
             margin-bottom: 15px;
             @include span-large ($font-sans-400, left, 400);
@@ -58,6 +58,15 @@
                 margin-bottom: 30px;
             }
 
+        }
+        a {
+            .iod-page & {
+                color: $color-iod;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
     picture {
@@ -91,8 +100,13 @@
     }
 
     &.app-hero {
-        max-width: 2000px;
+        max-width: 1482px;
         margin-top: 90px;
+        &.mercury-earn {
+            img {
+                animation: shake 1s infinite ease;
+            }
+        }
 
         .sticky-boy {
             @media only screen and (min-width:834px) {
@@ -143,7 +157,7 @@
 
         .sticky-boy {
             position: sticky;
-            top: 150px;
+            top: 45px;
             @media only screen and (min-height:600px) and (min-width:834px) {
                 top: 210px;
             }
@@ -219,7 +233,7 @@
 
         .sticky-boy {
             position: sticky;
-            top: 150px;
+            top: 45px;
             @media only screen and (min-height:600px) and (min-width:834px) {
                 top: 210px;
             }

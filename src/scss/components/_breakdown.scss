@@ -5,16 +5,22 @@
     }
     .breakdown-grid-set {
         // max-width: 1482px;
-        margin: 30px auto 120px auto;
-        @include grid-set-yourself (1, 1, 4, 4);
+        margin: 120px auto 120px auto;
+        @include grid-set-yourself (1, 2, 4, 4);
         grid-row-gap: 60px;
         @media only screen and (min-width:550px) {
             grid-row-gap: 60px;
-            margin: 10vh auto 240px auto;
+            margin: 10vmax auto 10vmax auto;
+        }
+        @media only screen and (min-width:834px) {
+            grid-row-gap: 60px;
+            margin: 3vmax auto 10vmax auto;
         }
         .breakdown-component {
             width: 100%;
             @include paragraph-large ($font-sans-200, center, 200);
+
+
             .span-large {
                 display: block;
                 margin-bottom: 5px;
@@ -23,3 +29,5 @@
         }
     }
 }
+
+// $mobile-column-amount, $tablet-column-amount, $small-desktop-column-amount, $desktop-column-amount
