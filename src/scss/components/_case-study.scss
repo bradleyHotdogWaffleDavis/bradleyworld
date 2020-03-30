@@ -21,8 +21,8 @@
 
     h3 {
         @include paragraph-xxl ($font-sans-200, left, 200);
-        font-weight: 200;
         margin-bottom: 90px;
+        position: relative;
 
         @media only screen and (min-width:834px) {
             margin-bottom: 180px;
@@ -89,13 +89,13 @@
         margin-bottom: 90px;
 
         @media only screen and (min-width:834px) {
-            grid-area: auto /4 / span 1 / span 18;
+            grid-area: auto /3 / span 1 / span 18;
             margin-bottom: 120px;
         }
 
         @media only screen and (min-width:1280px) {
             margin-bottom: 120px;
-            grid-area: auto / 6 / span 1 / span 14;
+            grid-area: auto / 5 / span 1 / span 16;
         }
     }
 
@@ -127,12 +127,12 @@
             }
 
             @media only screen and (min-width:834px) {
-                grid-area: auto / 13 / span 1 / span 11;
+                grid-area: auto / 11 / span 1 / span 13;
                 margin-top: 6vw;
             }
 
             @media only screen and (min-width:1280px) {
-                grid-area: auto / 13 / span 1 / span 11;
+                grid-area: auto / 11 / span 1 / span 13;
             }
         }
         picture {
@@ -143,11 +143,11 @@
             }
 
             @media only screen and (min-width:834px) {
-                grid-area: 1 / 2 / span 1 / span 10;
+                grid-area: 1 / 2 / span 1 / span 8;
             }
 
             @media only screen and (min-width:1280px) {
-                grid-area: 1 / 3 / span 1 / span 9;
+                grid-area: 1 / 2 / span 1 / span 8;
             }
         }
     }
@@ -164,21 +164,77 @@
         }
 
         h3 {
-            grid-area: auto / 1 / span 1 / span 12;
-
-            @media only screen and (max-width:834px) {
-                padding-left: 7vw;
-                padding-right: 7vw;
-            }
+            grid-area: auto / 2 / span 1 / span 8;
 
             @media only screen and (min-width:834px) {
-                grid-area: auto / 3 / span 1 / span 18;
+                grid-area: auto / 3 / span 1 / span 19;
+                padding: 15px 0 15px 30px;
             }
 
             @media only screen and (min-width:1280px) {
-                grid-area: auto / 3 / span 1 / span 13;
+                grid-area: auto / 3 / span 1 / span 19;
+            }
+
+            @media only screen and (min-width:834px) {
+                .mercury-go-page & {
+                    border-left: 1px solid rgba($color-mercury-go, .2);
+                }
+
+                .iod-page & {
+                    border-left: 1px solid rgba($color-iod, .2);
+                }
+
+                .mercury-kog-page & {
+                    border-left: 1px solid rgba($color-mercury-kog, .2);
+                }
+
+                &::after {
+                    content: ' ';
+                    width: 7px;
+                    height: 7px;
+                    // border-radius: 100%;
+                    background: rgba($primary-2, .4);
+                    position: absolute;
+                    bottom: -8px;
+                    left: -4px;
+
+                    .mercury-go-page & {
+                        background: rgba($color-mercury-go, 1);
+                    }
+
+                    .iod-page & {
+                        background: rgba($color-iod, 1);
+                    }
+
+                    .mercury-kog-page & {
+                        background: rgba($color-mercury-kog, 1);
+                    }
+                }
+                &::before {
+                    content: ' ';
+                    width: 7px;
+                    height: 7px;
+                    // border-radius: 100%;
+                    background: rgba($primary-2, .4);
+                    position: absolute;
+                    top: -8px;
+                    left: -4px;
+
+                    .mercury-go-page & {
+                        background: rgba($color-mercury-go, 1);
+                    }
+
+                    .iod-page & {
+                        background: rgba($color-iod, 1);
+                    }
+
+                    .mercury-kog-page & {
+                        background: rgba($color-mercury-kog, 1);
+                    }
+                }
             }
         }
+
         .paragraph-position {
             grid-area: auto / 1 / span 1 / span 6;
 
@@ -219,7 +275,7 @@
             }
 
             @media only screen and (min-width:834px) {
-                grid-area: auto / 15 / span 1 / span 8;
+                grid-area: auto / 16 / span 1 / span 7;
             }
 
             @media only screen and (min-width:1280px) {
@@ -240,6 +296,7 @@
         }
 
         h3 {
+            padding: 15px 0 15px 30px;
             grid-area: auto / 1 / span 2 / span 12;
 
             @media only screen and (max-width:834px) {
@@ -248,11 +305,70 @@
             }
 
             @media only screen and (min-width:834px) {
-                grid-area: auto / 3 / span 2 / span 18;
+                grid-area: auto / 3 / span 1 / span 19;
             }
 
             @media only screen and (min-width:1280px) {
-                grid-area: auto / 11 / span 2 / span 13;
+                grid-area: auto / 3 / span 1 / span 19;
+            }
+
+            .mercury-go-page & {
+                border-left: 1px solid rgba($color-mercury-go, .2);
+            }
+
+            .iod-page & {
+                border-left: 1px solid rgba($color-iod, .2);
+            }
+
+            .mercury-kog-page & {
+                border-left: 1px solid rgba($color-mercury-kog, .2);
+            }
+
+            @media only screen and (min-width:834px) {
+                &::after {
+                    content: ' ';
+                    width: 7px;
+                    height: 7px;
+                    // border-radius: 100%;
+                    background: rgba($primary-2, .4);
+                    position: absolute;
+                    bottom: -8px;
+                    left: -4px;
+
+                    .mercury-go-page & {
+                        background: rgba($color-mercury-go, 1);
+                    }
+
+                    .iod-page & {
+                        background: rgba($color-iod, 1);
+                    }
+
+                    .mercury-kog-page & {
+                        background: rgba($color-mercury-kog, 1);
+                    }
+                }
+                &::before {
+                    content: ' ';
+                    width: 7px;
+                    height: 7px;
+                    // border-radius: 100%;
+                    background: rgba($primary-2, .4);
+                    position: absolute;
+                    top: -8px;
+                    left: -4px;
+
+                    .mercury-go-page & {
+                        background: rgba($color-mercury-go, 1);
+                    }
+
+                    .iod-page & {
+                        background: rgba($color-iod, 1);
+                    }
+
+                    .mercury-kog-page & {
+                        background: rgba($color-mercury-kog, 1);
+                    }
+                }
             }
         }
 
@@ -299,7 +415,7 @@
             }
 
             @media only screen and (min-width:834px) {
-                grid-area: auto / 15 / span 1 / span 8;
+                grid-area: auto / 16 / span 1 / span 7;
             }
 
             @media only screen and (min-width:1280px) {

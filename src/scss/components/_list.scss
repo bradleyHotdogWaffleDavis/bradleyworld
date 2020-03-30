@@ -9,8 +9,8 @@
     li {
         display: block;
         max-width: calc(100vw - 60px);
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         @include paragraph-xl($font-sans-200, left, 200);
         border-bottom: 1px solid rgba($primary-2, 0.2);
         @media only screen and (min-width:834px) {

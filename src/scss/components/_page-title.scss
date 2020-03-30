@@ -1,6 +1,5 @@
 .page-title {
-    grid-column: 1 / -1;
-    width: 100vw;
+    grid-column: 2 / 12;
     overflow: hidden;
 
     @media only screen and (min-width:834px) {
@@ -8,40 +7,57 @@
     }
 
     h1 {
-        width: 120%;
-        @include page-title(22vw);
+        @include page-title(16vw);
         line-height: 1.2;
-        margin: 60px 0 0 -10vw;
+        margin: 60px 0 0 0;
+        text-align: left;
+
+        @media only screen and (min-width:550px) {
+            text-align: center;
+        }
 
         @media only screen and (min-width:834px) {
             font-size: 16vw;
-            margin: 30vmin 0 0 -10vw;
-            width: 120vw;
+            margin: 30vmin 0 0 0;
         }
 
         .iod-page & {
             color: $color-iod;
-            font-size: 42vw;
+            font-size: 32vw;
 
             @media only screen and (min-width:550px) {
-                font-size: 32vw;
+                font-size: 26vw;
             }
 
             @media only screen and (min-width:1280px) {
-                font-size: 18vw;
+                font-size: 15vw;
             }
         }
 
         .mercury-go-page & {
             color: $color-mercury-go;
-            font-size: 22vw;
+            font-size: 18vw;
 
             @media only screen and (min-width:550px) {
-                font-size: 16vw;
+                font-size: 10vw;
             }
 
             @media only screen and (min-width:1280px) {
-                font-size:16vw;
+                font-size:10vw;
+            }
+        }
+
+        .mercury-kog-page & {
+            color: $color-mercury-kog;
+            font-size: 16vw;
+
+            @media only screen and (min-width:550px) {
+                font-size: 7.5vw;
+            }
+
+            @media only screen and (min-width:1280px) {
+                font-size:7.5vw;
+                margin-top: 35vmin;
             }
         }
     }

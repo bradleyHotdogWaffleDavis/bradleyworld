@@ -1,6 +1,8 @@
 {% extends "./layout/layout.njk" %}
+{% import "./components/navigation.njk" as navMacros %}
 {% block content %}
 
+{{ navMacros.navigation('home') }}
 
 <div class="outer-grid-set nav-push homepage">
 
@@ -18,11 +20,19 @@
         </picture>
 
         <h2 class="big-text story">
-            I'm a Wellington, New Zealand based senior<span class="show-parts"> <span class="trigger">digital designer</span><span class="hide">. I'm definitely happiest when collaborating closely with my <span class="show-parts"> <span class="trigger">team</span><span class="hide"> to create <span class="show-parts"> <span class="trigger">dreams</span><span class="hide"> for our gorgeous clients</span></span></span></span></span>.
+            I'm a senior digital designer based in<span class="show-parts"> <span class="trigger"> Wellington, New Zealand</span><span class="hide">. I'm definitely happiest when collaborating closely with my <span class="show-parts"> <span class="trigger">team</span><span class="hide"> to create <span class="show-parts"> <span class="trigger">dreams</span><span class="hide"> for our gorgeous clients</span></span></span></span></span>.
         </h2>
 
+        <ul>
+            <li class="list-title">HIGHLY PROFICIENT IN</li>
+            <li>Sketch</li>
+            <li>Figma</li>
+            <li>InVision Studio</li>
+            <li>HTML/CSS</li>
+        </ul>
+
         <h2 class="big-text story">
-            Working in design makes me<span class="show-parts"> <span class="trigger">blush</span><span class="hide">. This means I'm not dragging my<span class="show-parts"> <span class="hide">cute little </span> <span class="trigger">butt</span> </span>out of<span class="show-parts"> <span class="trigger">bed each morning</span><span class="hide">. I would be very sad if I wasn't apart of this industry</span></span></span></span>.
+            Working in design makes me<span class="show-parts"> <span class="trigger">blush</span><span class="hide">. This means I'm not dragging my<span class="show-parts"> <span class="hide">cute little </span> <span class="trigger">butt</span> </span>out of<span class="show-parts"> <span class="trigger">bed each morning</span><span class="hide">. I'd be very sad if I wasn't apart of this industry</span></span></span></span>.
         </h2>
 
         <h2 class="big-text story">
@@ -64,7 +74,7 @@
             <li>Institute of Directors, New Zealand</li>
             <li>NZ Olympic Committee</li>
             <li>Workshop e</li>
-            <!-- <li>Toi-Ohomai - Institute of Technology</li> -->
+            <li>Toi-Ohomai - Institute of Technology</li>
             <!-- <li>Life Education Trust</li> -->
             <!-- <li>ACG schools</li> -->
             <!-- <li>Digital NZ</li> -->

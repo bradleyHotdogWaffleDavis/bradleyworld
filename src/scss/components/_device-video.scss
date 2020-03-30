@@ -1,0 +1,18 @@
+.video-wrap {
+    position: relative;
+
+    &--ipad {
+
+        video {
+            // position: absolute;
+            // max-width: 94%;
+            // margin: 3% 2.3%;
+            // z-index: -1;
+
+            position: absolute;
+            max-width: 91%;
+            margin: 4.4% 3.8%;
+            z-index: -1;
+        }
+    }
+}

@@ -1,30 +1,51 @@
 .breakdown-wrap {
-    grid-column: 1 / -1;
+    grid-column: 2 / 12;
     @media only screen and (min-width:834px) {
         grid-column: 2 / 24;
     }
     .breakdown-grid-set {
         // max-width: 1482px;
-        margin: 120px auto 120px auto;
+        margin: 0px auto 120px auto;
         @include grid-set-yourself (1, 2, 4, 4);
-        grid-row-gap: 60px;
+        grid-row-gap: 0px;
         @media only screen and (min-width:550px) {
-            grid-row-gap: 60px;
-            margin: 10vmax auto 10vmax auto;
+            margin: 10vmax auto 15vmax auto;
         }
         @media only screen and (min-width:834px) {
             grid-row-gap: 60px;
-            margin: 3vmax auto 10vmax auto;
+            margin: 10vmax auto 15vmax auto;
         }
         .breakdown-component {
             width: 100%;
-            @include paragraph-large ($font-sans-200, center, 200);
 
+            @include paragraph-large ($font-sans-200, left, 200);
+
+            @media only screen and (max-width:834px) {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba($primary-2, 0.2);
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+            @media only screen and (min-width:550px) and (max-width:834px) {
+                &:nth-last-child(2) {
+                    border-bottom: none;
+                }
+            }
+
+            @media only screen and (min-width:550px) {
+                text-align: center;
+            }
 
             .span-large {
                 display: block;
                 margin-bottom: 5px;
-                @include span-large ($font-sans-400, center, 400);
+                @include span-large ($font-sans-400, left, 400);
+
+                @media only screen and (min-width:550px) {
+                    text-align: center;
+                }
             }
         }
     }

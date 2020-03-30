@@ -1,5 +1,8 @@
 {% extends "./layout/layout.njk" %}
+{% import "./components/navigation.njk" as navMacros %}
 {% block content %}
+
+{{ navMacros.navigation('mercury-go') }}
 
 <div class="mercury-go-page outer-grid-set next-project-margin">
 
@@ -7,7 +10,16 @@
         <h1>Mercury Go</h1>
     </div>
 
-    <div class="breakdown-wrap" data-scroll-speed="-2">
+    <div class="image-hero-grid">
+        <div class="hero-wrap">
+            <picture class="image-hero image-hero-large">
+                <source media="(min-width: 1200px)" srcset="./images/projects/mergo/0-1-hero@1x.png 1x, ./images/projects/mergo/0-1-hero@2x.png 2x">
+                <img src="./images/projects/mergo/0-1-hero@1x.png">
+            </picture>
+        </div>
+    </div>
+
+    <div class="breakdown-wrap">
         <div class="breakdown-grid-set">
             <p class="breakdown-component paragraph-large"><span class="span-large">CLIENT</span>Mercury</p>
             <p class="breakdown-component paragraph-large"><span class="span-large">PLATFORM</span>Native iOS & Android</p>
@@ -16,16 +28,9 @@
         </div>
     </div>
 
-    <div class="image-hero-wrap">
-        <picture class="image-hero image-hero-large">
-            <source media="(min-width: 1200px)" srcset="./images/projects/mergo/0-1-hero@1x.png 1x, ./images/projects/mergo/0-1-hero@2x.png 2x">
-                <img src="./images/projects/mergo/0-1-hero@1x.png">
-        </picture>
-    </div>
-
     <div class="big-text-position">
         <h2 class="big-text">
-            Pushing for positivity, we delivered Mercury an app that <span class="show-parts"> <span class="trigger">stands out</span><span class="hide">. Our goal was to inspire customers about energy by offering something <span class="show-parts"> <span class="trigger">meaningful & beneficial</span><span class="hide"> that they can proudly get <span class="show-parts"> <span class="trigger">behind</span><span class="hide">, instead of the standard utility-focused app</span></span></span></span></span></span>.
+            Pushing for positivity, we delivered Mercury an app that <span class="show-parts"> <span class="trigger">stands out</span><span class="hide">. Our goal was to inspire customers about energy by offering something <span class="show-parts"> <span class="trigger">meaningful & beneficial</span><span class="hide"> that they can proudly get <span class="show-parts"> <span class="trigger">behind</span><span class="hide">. This isn't a standard utility power app</span></span></span></span></span></span>.
             {# Creating a positive brand worth talking about. We delivered Mercury an app that <span class="show-parts"> <span class="trigger">stands out</span><span class="hide">. We focused on inspiring customers about energy by offering something <span class="show-parts"> <span class="trigger">meaningful & beneficial</span><span class="hide"> that they can proudly get <span class="show-parts"> <span class="trigger">behind</span><span class="hide">, instead of a standard utility focused app.</span></span></span></span></span></span>. #}
         </h2>
     </div>
@@ -54,6 +59,6 @@
 </div>
 
 
-{% include "./components/next-project-iod.njk" %}
+{% include "./components/next-project-mercury-kog.njk" %}
 
 {% endblock %}

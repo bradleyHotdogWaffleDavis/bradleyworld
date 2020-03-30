@@ -5,12 +5,17 @@
     // background: $primary;
 
     @media only screen and (min-width:834px) {
-        grid-column: 2 / 24;
-        margin-bottom: 240px;
+        grid-column: 3 / 22;
+        margin-bottom: 120px;
 
         &.last-page-component {
             margin-bottom: 60px;
         }
+    }
+
+    @media only screen and (min-width:1280px) {
+        grid-column: 2 / 24;
+        margin-bottom: 240px;
     }
 
     .big-text {
@@ -19,8 +24,8 @@
         @media only screen and (max-width:834px) {
             font-size: 8vw;
         }
-        &.center {
-            text-align: center;
+        @media only screen and (min-width:834px) {
+            max-width: 90.5%;
         }
 
         &.home-story {
@@ -82,6 +87,11 @@
                 .mercury-go-page & {
                     color: $color-mercury-go;
                     text-decoration-color: $color-mercury-go;
+                }
+
+                .mercury-kog-page & {
+                    color: $color-mercury-kog;
+                    text-decoration-color: $color-mercury-kog;
                 }
 
                 &:hover {

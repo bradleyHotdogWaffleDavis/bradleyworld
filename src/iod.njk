@@ -1,5 +1,8 @@
 {% extends "./layout/layout.njk" %}
+{% import "./components/navigation.njk" as navMacros %}
 {% block content %}
+
+{{ navMacros.navigation('iod') }}
 
 <div class="iod-page outer-grid-set next-project-margin">
 
@@ -7,7 +10,16 @@
         <h1 class="iod-page-title">IOD</h1>
     </div>
 
-    <div class="breakdown-wrap" data-scroll-speed="-2">
+    <div class="image-hero-grid">
+        <div class="hero-wrap">
+            <picture class="image-hero image-hero-small">
+                <source media="(min-width: 1200px)" srcset="./images/projects/iod/0-1-hero@1x.png 1x, ./images/projects/iod/0-1-hero@2x.png 2x">
+                    <img src="./images/projects/iod/0-1-hero@1x.png">
+            </picture>
+        </div>
+    </div>
+
+    <div class="breakdown-wrap">
         <div class="breakdown-grid-set">
             <p class="breakdown-component paragraph-large"><span class="span-large">CLIENT</span>Institute of Directors NZ</p>
             <p class="breakdown-component paragraph-large"><span class="span-large">PLATFORM</span>Large scale website</p>
@@ -16,15 +28,8 @@
         </div>
     </div>
 
-    <div class="image-hero-wrap">
-        <picture class="image-hero image-hero-small">
-            <source media="(min-width: 1200px)" srcset="./images/projects/iod/0-1-hero@1x.png 1x, ./images/projects/iod/0-1-hero@2x.png 2x">
-                <img src="./images/projects/iod/0-1-hero@1x.png">
-        </picture>
-    </div>
-
     <div class="big-text-position">
-        <p class="big-text center">Providing the experiences &amp; resources essential for the thought leaders of New Zealand.</p>
+        <p class="big-text">Providing the experiences &amp; resources essential for the thought leaders of New Zealand.</p>
     </div>
 
     {% include "./components/iod-visual-brand_case-study_info-right.njk" %}
