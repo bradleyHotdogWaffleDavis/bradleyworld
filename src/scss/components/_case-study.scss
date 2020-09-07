@@ -27,6 +27,9 @@
         @media only screen and (min-width:834px) {
             margin-bottom: 180px;
         }
+        @media only screen and (min-width:1280px) {
+            margin-bottom: 240px;
+        }
 
         span {
             // position: sticky;
@@ -164,75 +167,82 @@
         }
 
         h3 {
-            grid-area: auto / 2 / span 1 / span 8;
+            grid-area: auto / 2 / span 1 / span 10;
 
             @media only screen and (min-width:834px) {
-                grid-area: auto / 3 / span 1 / span 19;
-                padding: 15px 0 15px 30px;
+                grid-area: auto / 3 / span 1 / span 18;
+                // padding: 15px 0 15px 30px;
             }
 
             @media only screen and (min-width:1280px) {
-                grid-area: auto / 3 / span 1 / span 19;
+                grid-area: auto / 3 / span 1 / span 18;
             }
 
-            @media only screen and (min-width:834px) {
-                .mercury-go-page & {
-                    border-left: 1px solid rgba($color-mercury-go, .2);
-                }
+            // Cool branded vertical line
+            // Cool branded vertical line
+            // Cool branded vertical line
+            // @media only screen and (min-width:834px) {
+            //     .mercury-go-page & {
+            //         border-left: 1px solid rgba($color-mercury-go, .2);
+            //     }
 
-                .iod-page & {
-                    border-left: 1px solid rgba($color-iod, .2);
-                }
+            //     .iod-page & {
+            //         border-left: 1px solid rgba($color-iod, .2);
+            //     }
 
-                .mercury-kog-page & {
-                    border-left: 1px solid rgba($color-mercury-kog, .2);
-                }
+            //     .mercury-kog-page & {
+            //         border-left: 1px solid rgba($color-mercury-kog, .2);
+            //     }
 
-                &::after {
-                    content: ' ';
-                    width: 7px;
-                    height: 7px;
-                    // border-radius: 100%;
-                    background: rgba($primary-2, .4);
-                    position: absolute;
-                    bottom: -8px;
-                    left: -4px;
+            //     &::after {
+            //         content: ' ';
+            //         width: 7px;
+            //         height: 7px;
+            //         // border-radius: 100%;
+            //         background: rgba($primary-2, .4);
+            //         position: absolute;
+            //         bottom: -8px;
+            //         left: -4px;
 
-                    .mercury-go-page & {
-                        background: rgba($color-mercury-go, 1);
-                    }
+            //         .mercury-go-page & {
+            //             background: rgba($color-mercury-go, 1);
+            //         }
 
-                    .iod-page & {
-                        background: rgba($color-iod, 1);
-                    }
+            //         .iod-page & {
+            //             background: rgba($color-iod, 1);
+            //         }
 
-                    .mercury-kog-page & {
-                        background: rgba($color-mercury-kog, 1);
-                    }
-                }
-                &::before {
-                    content: ' ';
-                    width: 7px;
-                    height: 7px;
-                    // border-radius: 100%;
-                    background: rgba($primary-2, .4);
-                    position: absolute;
-                    top: -8px;
-                    left: -4px;
+            //         .mercury-kog-page & {
+            //             background: rgba($color-mercury-kog, 1);
+            //         }
+            //     }
+            //     &::before {
+            //         content: ' ';
+            //         width: 7px;
+            //         height: 7px;
+            //         // border-radius: 100%;
+            //         background: rgba($primary-2, .4);
+            //         position: absolute;
+            //         top: -8px;
+            //         left: -4px;
 
-                    .mercury-go-page & {
-                        background: rgba($color-mercury-go, 1);
-                    }
+            //         .mercury-go-page & {
+            //             background: rgba($color-mercury-go, 1);
+            //         }
 
-                    .iod-page & {
-                        background: rgba($color-iod, 1);
-                    }
+            //         .iod-page & {
+            //             background: rgba($color-iod, 1);
+            //         }
 
-                    .mercury-kog-page & {
-                        background: rgba($color-mercury-kog, 1);
-                    }
-                }
-            }
+            //         .mercury-kog-page & {
+            //             background: rgba($color-mercury-kog, 1);
+            //         }
+            //     }
+            // }
+            // END - Cool branded vertical line
+            // END - Cool branded vertical line
+            // END - Cool branded vertical line
+
         }
 
         .paragraph-position {
@@ -296,80 +306,89 @@
         }
 
         h3 {
-            padding: 15px 0 15px 30px;
-            grid-area: auto / 1 / span 2 / span 12;
+            // padding: 15px 0 15px 30px;
+            grid-area: auto / 2 / span 1 / span 10;
 
             @media only screen and (max-width:834px) {
-                padding-left: 7vw;
-                padding-right: 7vw;
+                padding-left: 0;
+                padding-right: 0;
             }
 
             @media only screen and (min-width:834px) {
-                grid-area: auto / 3 / span 1 / span 19;
+                grid-area: auto / 3 / span 1 / span 18;
             }
 
             @media only screen and (min-width:1280px) {
-                grid-area: auto / 3 / span 1 / span 19;
+                grid-area: auto / 3 / span 1 / span 18;
             }
 
-            .mercury-go-page & {
-                border-left: 1px solid rgba($color-mercury-go, .2);
-            }
+            // Cool branded vertical line
+            // Cool branded vertical line
+            // Cool branded vertical line
 
-            .iod-page & {
-                border-left: 1px solid rgba($color-iod, .2);
-            }
+            // .mercury-go-page & {
+            //     border-left: 1px solid rgba($color-mercury-go, .2);
+            // }
 
-            .mercury-kog-page & {
-                border-left: 1px solid rgba($color-mercury-kog, .2);
-            }
+            // .iod-page & {
+            //     border-left: 1px solid rgba($color-iod, .2);
+            // }
 
-            @media only screen and (min-width:834px) {
-                &::after {
-                    content: ' ';
-                    width: 7px;
-                    height: 7px;
-                    // border-radius: 100%;
-                    background: rgba($primary-2, .4);
-                    position: absolute;
-                    bottom: -8px;
-                    left: -4px;
+            // .mercury-kog-page & {
+            //     border-left: 1px solid rgba($color-mercury-kog, .2);
+            // }
 
-                    .mercury-go-page & {
-                        background: rgba($color-mercury-go, 1);
-                    }
+            // @media only screen and (min-width:834px) {
+            //     &::after {
+            //         content: ' ';
+            //         width: 7px;
+            //         height: 7px;
+            //         // border-radius: 100%;
+            //         background: rgba($primary-2, .4);
+            //         position: absolute;
+            //         bottom: -8px;
+            //         left: -4px;
 
-                    .iod-page & {
-                        background: rgba($color-iod, 1);
-                    }
+            //         .mercury-go-page & {
+            //             background: rgba($color-mercury-go, 1);
+            //         }
 
-                    .mercury-kog-page & {
-                        background: rgba($color-mercury-kog, 1);
-                    }
-                }
-                &::before {
-                    content: ' ';
-                    width: 7px;
-                    height: 7px;
-                    // border-radius: 100%;
-                    background: rgba($primary-2, .4);
-                    position: absolute;
-                    top: -8px;
-                    left: -4px;
+            //         .iod-page & {
+            //             background: rgba($color-iod, 1);
+            //         }
 
-                    .mercury-go-page & {
-                        background: rgba($color-mercury-go, 1);
-                    }
+            //         .mercury-kog-page & {
+            //             background: rgba($color-mercury-kog, 1);
+            //         }
+            //     }
+            //     &::before {
+            //         content: ' ';
+            //         width: 7px;
+            //         height: 7px;
+            //         // border-radius: 100%;
+            //         background: rgba($primary-2, .4);
+            //         position: absolute;
+            //         top: -8px;
+            //         left: -4px;
 
-                    .iod-page & {
-                        background: rgba($color-iod, 1);
-                    }
+            //         .mercury-go-page & {
+            //             background: rgba($color-mercury-go, 1);
+            //         }
 
-                    .mercury-kog-page & {
-                        background: rgba($color-mercury-kog, 1);
-                    }
-                }
-            }
+            //         .iod-page & {
+            //             background: rgba($color-iod, 1);
+            //         }
+
+            //         .mercury-kog-page & {
+            //             background: rgba($color-mercury-kog, 1);
+            //         }
+            //     }
+            // }
+
+            // END - Cool branded vertical line
+            // END - Cool branded vertical line
+            // END - Cool branded vertical line
+
         }
 
         .paragraph-position {

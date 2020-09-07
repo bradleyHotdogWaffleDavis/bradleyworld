@@ -18,7 +18,12 @@
 
         @media only screen and (min-width:834px) {
             font-size: 16vw;
-            margin: 30vmin 0 0 0;
+            margin: 400px 0 0 0;
+        }
+
+        @media only screen and (min-width:1280px) {
+            font-size: 16vw;
+            margin: 25vmin 0 0 0;
         }
 
         .iod-page & {
@@ -39,11 +44,11 @@
             font-size: 18vw;
 
             @media only screen and (min-width:550px) {
-                font-size: 10vw;
+                font-size: 15vw;
             }
 
             @media only screen and (min-width:1280px) {
-                font-size:10vw;
+                font-size:15vw;
             }
         }
 
@@ -52,12 +57,26 @@
             font-size: 16vw;
 
             @media only screen and (min-width:550px) {
-                font-size: 7.5vw;
+                font-size: 11.5vw;
             }
 
             @media only screen and (min-width:1280px) {
-                font-size:7.5vw;
-                margin-top: 35vmin;
+                font-size:11.5vw;
+                margin-top: 30vmin;
+            }
+        }
+
+        .catchdesign-page & {
+            color: $colour-catch-pastel-green;
+            font-size: 16vw;
+
+            @media only screen and (min-width:550px) {
+                font-size: 11.5vw;
+            }
+
+            @media only screen and (min-width:1280px) {
+                font-size:13.5vw;
+                margin-top: 28vmin;
             }
         }
     }

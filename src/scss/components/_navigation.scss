@@ -1,8 +1,9 @@
 .navWrap {
-    background-image: $Downward-gradient;
     @include grid-twenty-four;
     display: grid;
-    mix-blend-mode: difference;
+    @media only screen and (min-width:834px) {
+        background-image: $Downward-gradient;
+    }
 }
 
 .reveal-boy {
@@ -108,13 +109,24 @@
                         }
                     }
                 }
+                &#nav-li-catchdesign {
+                    a {
+
+                        box-shadow: inset -1px 0 0 0 $primary-2;
+                        transition: all .2s ease-in-out;
+                        &:hover, &.active {
+                            box-shadow: inset -3px 0 0 0 $colour-catch-pastel-purple;
+                            color: $colour-catch-pastel-purple;
+                        }
+                    }
+                }
 
             }
             &#nav-li-home {
                 a {
                     box-shadow: none;
                     transition: color .2s ease-in-out;
-                    @include paragraph-large($font-sans-400, left, 400);
+                    @include paragraph-xl($font-sans-300-italics, left, 100);
                     &:hover {
                         box-shadow: none;
                         color: $primary-3;
@@ -138,18 +150,24 @@
             &:nth-child(4) {
                 grid-area: 3 / 1 / span 1 / span 11;
             }
+            &:nth-child(5) {
+                grid-area: 5 / 1 / span 1 / span 11;
+            }
             @media only screen and (min-width:834px) {
                 &:nth-child(1) {
-                    grid-area: 1 / 2 / span 1 / span 5;
+                    grid-area: 1/2/span 1/span 7;
                 }
                 &:nth-child(2) {
-                    grid-area: 2 / 5 / span 1 / span 4;
+                    grid-area: 1/8/span 1/span 6;
                 }
                 &:nth-child(3) {
-                    grid-area: 1 / 5 / span 1 / span 4;
+                    grid-area: 2/8/span 1/span 6;
                 }
                 &:nth-child(4) {
-                    grid-area: 1 / 11 / span 1 / span 6;
+                    grid-area: 3/8/span 1/span 6;
+                }
+                &:nth-child(5) {
+                    grid-area: 4/8/span 1/span 6;
                 }
             }
             @media only screen and (min-width:1280px) {
@@ -164,6 +182,9 @@
                 }
                 &:nth-child(4) {
                     grid-area: 1 / 10 / span 1 / span 5;
+                }
+                &:nth-child(5) {
+                    grid-area: 2 / 10 / span 1 / span 5;
                 }
             }
             a {
@@ -230,7 +251,6 @@
             @include paragraph-large($font-sans-200, right, 200);
             padding-top: 20px;
             display: block;
-            mix-blend-mode: exclusion;
             @media only screen and (min-width:834px) {
                 padding-top: 30px;
                 padding-right: 0;
